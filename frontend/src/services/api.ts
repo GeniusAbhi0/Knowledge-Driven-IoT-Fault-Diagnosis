@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import type { AlertItem, AssistantReply, FaultFilters, FaultStatus, KnowledgeEntry, KnowledgeInput, UserItem, Role, DashboardData, Device, DeviceInput, DiagnosisReport, FaultRecord, Scenario, SeriesData, SimStatus, TickResult, User } from "../types";
 
 export const TOKEN_KEY = "iot_token";
-export const api = axios.create({ baseURL: "/api", timeout: 15000 });
+export const api = axios.create({baseURL: `${import.meta.env.VITE_API_URL}/api`,timeout: 15000,});
 
 api.interceptors.request.use((cfg) => {
   const token = localStorage.getItem(TOKEN_KEY);
