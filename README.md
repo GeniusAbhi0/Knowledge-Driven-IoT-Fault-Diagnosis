@@ -2,6 +2,12 @@
 
 A full-stack, software-only platform that receives (simulated) IoT sensor data, evaluates it against a **knowledge base of IF/THEN rules**, and produces **explainable fault diagnoses** with severity, confidence, evidence, causes and corrective actions. No physical hardware is needed.
 
+## 🚀 Live Demo
+
+🌐 **Live Website:** https://iot-fault-diagnosis.netlify.app
+
+📚 **Backend API Docs:** https://iot-fault-diagnosis-backend.onrender.com/docs
+
 ## Problem statement
 Operators of industrial equipment face streams of sensor values and must decide quickly whether something is wrong, why, and what to do. Black-box alerts are hard to trust. This project shows every reading, threshold and rule behind each diagnosis.
 
